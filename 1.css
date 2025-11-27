@@ -1,0 +1,181 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.head {
+  display: flex;
+  background-color: rgb(22, 22, 170);
+  color: white;
+  padding: 10px;
+  min-height: 9vh;
+}
+
+.head .head--logo {
+  width: 50%;
+  text-align: center;
+  align-content: center;
+}
+
+.head .head--nav {
+  display: flex;
+  width: 40%;
+  text-align: center;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.head .head--nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.head--nav--icon {
+  width: 10%;
+  display: none;
+}
+
+.content {
+  display: flex;
+  margin: 10px 50px;
+  min-height: 80vh;
+}
+
+.content--aside {
+  width: 20%;
+  color: white;
+  padding: 20px;
+}
+
+.content--aside h3 {
+  background-color: rgb(22, 22, 170);
+  margin: 10px 0;
+  padding: 20px;
+}
+
+.content .content--main {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.content .content--main h1 {
+  color: rgb(22, 22, 170);
+  font-size: 35px;
+}
+
+.content .content--sidebar {
+  background-color: rgb(22, 22, 170);
+  color: white;
+  height: 340px;
+  padding: 15px 10px 5px;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+.content .content--sidebar h3,
+h4 {
+  align-content: space-around;
+}
+
+.foot {
+  background-color: rgb(22, 22, 170);
+  color: white;
+  padding: 20px;
+  text-align: center;
+  min-height: 9vh;
+  align-content: center;
+}
+
+    @media (max-width : 764px){
+
+        .content{
+            flex-wrap: wrap;
+        }
+
+        .content--aside{
+            width: 40%;
+        }
+
+        .content--main{
+
+            width: 60%;
+        }
+
+         .content--main h1{
+
+            width: 60%;
+            background-color: blueviolet;
+            transition: all 2s;
+        }
+
+        .content--sidebar{
+
+            width: 100%;
+        }
+    }
+
+
+ @media (max-width : 580px){
+
+  .content{
+            flex-wrap: wrap;
+        
+        }
+
+        .content--aside{
+            width: 90%;
+         
+        }
+
+         .content--aside h3{
+            width: 90%;
+            background-color: pink;
+            transition: all 2s;
+        }
+
+        .content--main{
+
+            width: 100%;
+        }
+
+        .content--sidebar{
+
+            width: 100%;
+        }
+
+           .content--sidebar h3 h4{
+
+            width: 100%;
+            background-color: purple;
+            transition: all 2s;
+        }
+
+             .content--sidebar {
+
+            width: 100%;
+           
+        }
+
+
+
+
+        .head--nav a {
+
+          display: none;
+
+        }
+
+        .head--nav--icon{
+            display: block;
+        }
+
+    
+
+
+ }
